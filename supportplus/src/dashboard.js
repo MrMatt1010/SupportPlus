@@ -1,7 +1,7 @@
 // Dashboard.js
 
 import React, { useState, useEffect } from 'react';
-import './Dashboard.css'; // Import your CSS file for styling
+import './dashboard.css'; 
 
 const Dashboard = () => {
   // State variables to store ticket data and feedback data

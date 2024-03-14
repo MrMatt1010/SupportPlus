@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './Login.css'; // Import your CSS file for styling
+import './login.css'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
