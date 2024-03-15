@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './login';
 import Dashboard from './dashboard';
 import OpenTickets from './openTickets';
+import ClosedTickets from './closedTickets';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Login} />
         <Route path="/dashboard" component={Dashboard} />
-        <Route path="//openTickets" component={OpenTickets} />
+        <Route path="/openTickets" component={OpenTickets} />
+        <Route path="/closedTickets" component={ClosedTickets} />
         {/* Add more routes if needed */}
       </Switch>
     </Router>
