@@ -10,8 +10,6 @@ const Login = () => {
   const history = useHistory();
 
   const handleLogin = () => {
-    // Perform your login logic here
-    // Assuming login is successful, navigate to the dashboard
     history.push('/dashboard');
   };
 
