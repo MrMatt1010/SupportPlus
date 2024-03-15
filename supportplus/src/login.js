@@ -1,4 +1,4 @@
-// Login.js
+/*login.js */
 
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
@@ -10,13 +10,14 @@ const Login = () => {
   const history = useHistory();
 
   const handleLogin = () => {
-    // Perform your login logic here, such as API calls or authentication
-    // For this example, let's assume login is successful and navigate to the dashboard
+    // Perform your login logic here
+    // Assuming login is successful, navigate to the dashboard
     history.push('/dashboard');
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container">  
+    <h2 style={{ color: 'orange' }}>SupportPlus</h2>
       <div className="login-form">
         <h2 style={{ color: 'orange' }}>Login</h2>
         <div className="input-group">
