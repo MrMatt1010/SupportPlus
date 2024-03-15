@@ -43,7 +43,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="nav-menu">
         <ul>
-          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="/openTickets">Tickets</a></li>
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="#closed">Closed</a></li>
           <li><a href="#admin">Admin</a></li>

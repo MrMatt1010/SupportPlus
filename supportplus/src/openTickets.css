@@ -1,0 +1,53 @@
+.open-tickets-container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  
+  .open-tickets-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .ticket-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ticket {
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket p {
+    margin: 0;
+  }
+  
+  /* Styling for NavBar component */
+  /* You may adjust this according to your NavBar component */
+  .nav-menu {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
