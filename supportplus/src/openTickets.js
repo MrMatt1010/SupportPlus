@@ -29,13 +29,29 @@ const OpenTickets = () => {
     setFilter({ ...filter, [name]: value });
   };
 
-  return ( 
+  const handleCloseTicket = () => {
+    // Handle close ticket action
+  };
+
+  const handleEscalate = () => {
+    // Handle escalate action
+  };
+
+  const handleUpdate = () => {
+    // Handle update action
+  };
+
+  const handleCancel = () => {
+    // Handle cancel action
+  };
+
+  return (
     <div className="open-tickets-container">
         <div className="nav-menu">
         <ul>
-          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="./dashboard">Dashboard</a></li>
           <li><a href="#feedback">Feedback</a></li>
-          <li><a href="#closed">Closed</a></li>
+          <li><a href="./closedTickets">Closed</a></li>
           <li><a href="#admin">Admin</a></li>
         </ul>
         <button>New Ticket</button>
@@ -69,11 +85,15 @@ const OpenTickets = () => {
             <div key={ticket.id} className="ticket">
               <p>Ticket ID: {ticket.id}</p>
               <p>Description: {ticket.description}</p>
-              <p>Priority: {ticket.priority}</p>
-              <p>Area: {ticket.area}</p>
-              <p>Allocated to: {ticket.allocatedTo}</p>
+              {/* Add more ticket details as needed */}
             </div>
           ))}
+        </div>
+        <div className="action-buttons">
+          <button onClick={handleCloseTicket}>Close Ticket</button>
+          <button onClick={handleEscalate}>Escalate</button>
+          <button onClick={handleUpdate}>Update</button>
+          <button onClick={handleCancel}>Cancel</button>
         </div>
       </div>
     </div>

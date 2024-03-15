@@ -33,9 +33,9 @@ const ClosedTickets = () => {
     <div className="closed-tickets-container" style={{ backgroundColor: 'lightblue' }}>
       <div className="nav-menu">
         <ul>
-          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="./openTickets">Tickets</a></li>
           <li><a href="#feedback">Feedback</a></li>
-          <li><a href="#closed">Closed</a></li>
+          <li><a href="./dashboard">Dashboard</a></li>
           <li><a href="#admin">Admin</a></li>
         </ul>
         <button>New Ticket</button>

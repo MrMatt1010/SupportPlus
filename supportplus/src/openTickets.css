@@ -1,6 +1,6 @@
 /* openTickets.css */
 
-.dashboard-container {
+.open-tickets-container-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
   }
   
   .nav-menu ul li a {
-    color: white;
+    color: #F58A07;
     text-decoration: none;
   }
   
