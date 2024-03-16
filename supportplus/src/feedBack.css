@@ -1,6 +1,12 @@
 /* Feedback.css */
 
-.feedback-container {
+.feedback-page {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+  }
+  
+  .feedback-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
