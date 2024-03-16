@@ -46,7 +46,7 @@ const Dashboard = () => {
           <li><a href="./openTickets">Tickets</a></li>
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="./closedTickets">Closed</a></li>
-          <li><a href="#admin">Admin</a></li>
+          <li><a href="./dashboard">Admin</a></li>
         </ul>
         <button>New Ticket</button>
       </div>
