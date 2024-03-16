@@ -3,19 +3,19 @@ import SupportAgentList from './supportAgentList'; // Placeholder component for 
 import AddSupportAgentForm from './addSupportAgentForm'; // Placeholder component for adding support agents
 import ChangeRoleForm from './changeRoleForm'; // Placeholder component for changing support agent roles
 import ChangePasswordForm from './changePasswordForm'; // Placeholder component for changing support agent passwords
-import { isAdmin } from './auth'; // Placeholder function to check if the user is an admin
+//import { isAdmin } from './auth'; // Placeholder function to check if the user is an admin
 
 const AdminPage = () => {
   const [supportAgents, setSupportAgents] = useState([]);
   const [selectedAgent, setSelectedAgent] = useState(null);
 
-  useEffect(() => {
-    if (isAdmin()) {
-      fetchSupportAgents();
-    } else {
-      // Redirect to login page or display unauthorized message
-    }
-  }, []);
+//  useEffect(() => {
+//    if (isAdmin()) {
+//      fetchSupportAgents();
+//    } else {
+//      // Redirect to login page or display unauthorized message
+//    }
+//  }, []);
 
   const fetchSupportAgents = async () => {
     try {

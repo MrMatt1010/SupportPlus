@@ -7,6 +7,7 @@ import Dashboard from './dashboard';
 import OpenTickets from './openTickets';
 import ClosedTickets from './closedTickets';
 import AdminPage from './admin';
+import CreateTicketForm from './createTicket';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/openTickets" component={OpenTickets} />
         <Route path="/closedTickets" component={ClosedTickets} />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/createNewTicket" component={CreateTicketForm} />
         {/* Add more routes if needed */}
       </Switch>
     </Router>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './openTickets.css';
 
 const OpenTickets = () => {
@@ -52,9 +53,9 @@ const OpenTickets = () => {
           <li><a href="./dashboard">Dashboard</a></li>
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="./closedTickets">Closed</a></li>
-          <li><a href="#admin">Admin</a></li>
+          <li><a href="./admin">Admin</a></li>
         </ul>
-        <button>New Ticket</button>
+        <Link to="./createNewTicket"><button>New Ticket</button></Link>
       </div>
       <div className="open-tickets-content">
         <h2>Open Tickets</h2>

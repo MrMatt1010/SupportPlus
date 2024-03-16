@@ -1,6 +1,7 @@
 // Dashboard.js
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './dashboard.css'; 
 
 const Dashboard = () => {
@@ -46,9 +47,9 @@ const Dashboard = () => {
           <li><a href="./openTickets">Tickets</a></li>
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="./closedTickets">Closed</a></li>
-          <li><a href="./dashboard">Admin</a></li>
+          <li><a href="./admin">Admin</a></li>
         </ul>
-        <button>New Ticket</button>
+        <Link to="./createNewTicket"><button>New Ticket</button></Link>
       </div>
       <div className="section">
         <h2>Open Tickets</h2>
@@ -63,7 +64,6 @@ const Dashboard = () => {
               <p>Priority: {ticket.priority}</p>
               <p>Area: {ticket.area}</p>
               <p>Allocated to: {ticket.allocatedTo}</p>
-              {/* Add more ticket details as needed */}
             </div>
           ))}
         </div>
