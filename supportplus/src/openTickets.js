@@ -86,7 +86,6 @@ const OpenTickets = () => {
             <div key={ticket.id} className="ticket">
               <p>Ticket ID: {ticket.id}</p>
               <p>Description: {ticket.description}</p>
-              {/* Add more ticket details as needed */}
             </div>
           ))}
         </div>

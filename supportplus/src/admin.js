@@ -34,22 +34,22 @@ const AdminPage = () => {
 
   const handleRoleChange = (agentId, newRole) => {
     // Update the role of the selected agent
-    // Make API call to update support agent role
+    // Makes API call to update support agent role
   };
 
   const handlePasswordChange = (agentId, newPassword) => {
     // Change the password of the selected agent
-    // Make API call to change support agent password
+    // Makes API call to change support agent password
   };
 
   const handleAddAgent = (newAgentData) => {
     // Add a new support agent
-    // Make API call to add new support agent
+    // Makes API call to add new support agent
   };
 
   const handleDeleteAgent = (agentId) => {
     // Delete the selected agent
-    // Make API call to delete support agent
+    // Makes API call to delete support agent
   };
 
   return (
@@ -59,7 +59,6 @@ const AdminPage = () => {
       <ChangeRoleForm agent={selectedAgent} onChange={handleRoleChange} />
       <ChangePasswordForm agent={selectedAgent} onChange={handlePasswordChange} />
       <AddSupportAgentForm onSubmit={handleAddAgent} />
-      {/* Display other components as needed */}
     </div>
   );
 };

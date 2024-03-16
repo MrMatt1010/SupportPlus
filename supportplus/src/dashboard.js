@@ -13,7 +13,6 @@ const Dashboard = () => {
   const fetchTickets = async () => {
     try {
       // Make API call to fetch ticket data from the server
-      // Replace the URL with your actual backend endpoint
       const response = await fetch('/api/tickets');
       const data = await response.json();
       setTickets(data);
@@ -26,7 +25,6 @@ const Dashboard = () => {
   const fetchFeedback = async () => {
     try {
       // Make API call to fetch feedback data from the server
-      // Replace the URL with your actual backend endpoint
       const response = await fetch('/api/feedback');
       const data = await response.json();
       setFeedback(data);
@@ -38,14 +36,14 @@ const Dashboard = () => {
   useEffect(() => {
     fetchTickets();
     fetchFeedback();
-  }, []); // Empty dependency array ensures this effect runs only once on component mount
+  }, []); // Empty dependency array ensures this effect runs only once the component mounts
 
   return (
     <div className="dashboard-container">
       <div className="nav-menu">
         <ul>
           <li><a href="./openTickets">Tickets</a></li>
-          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="./feedback">Feedback</a></li>
           <li><a href="./closedTickets">Closed</a></li>
           <li><a href="./admin">Admin</a></li>
         </ul>
@@ -79,7 +77,6 @@ const Dashboard = () => {
               <p>Raised By: {item.raisedBy}</p>
               <p>Description: {item.description}</p>
               <p>Feedback: {item.feedback}</p>
-              {/* Add more feedback details as needed */}
             </div>
           ))}
         </div>

@@ -8,6 +8,7 @@ import OpenTickets from './openTickets';
 import ClosedTickets from './closedTickets';
 import AdminPage from './admin';
 import CreateTicketForm from './createTicket';
+import Feedback from './feedBack';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/closedTickets" component={ClosedTickets} />
         <Route path="/admin" component={AdminPage} />
         <Route path="/createNewTicket" component={CreateTicketForm} />
+        <Route path="/feedBack" component={Feedback} />
         {/* Add more routes if needed */}
       </Switch>
     </Router>

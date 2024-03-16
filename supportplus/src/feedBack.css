@@ -2,7 +2,7 @@
 
 .feedback-page {
     background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    color: orange; /* White text */
     padding: 20px;
   }
   
@@ -17,7 +17,9 @@
   .feedback-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: orange;
   }
+  
   
   .form-group {
     margin-bottom: 20px;
@@ -26,6 +28,7 @@
   .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: orange;
   }
   
   textarea {

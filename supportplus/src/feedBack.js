@@ -3,7 +3,7 @@ import './feedBack.css';
 
 const Feedback = () => {
   const [feedback, setFeedback] = useState('');
-  const [ticketId, setTicketId] = useState(''); // Assuming you have a way to retrieve the ticket ID
+  const [ticketId, setTicketId] = useState(''); //retrieve the ticket ID
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,7 +17,7 @@ const Feedback = () => {
         body: JSON.stringify({ feedback, ticketId }),
       });
       if (response.ok) {
-        // Feedback submitted successfully, you can redirect or show a success message
+        // Feedback submitted successfully, redirect or show a success message
         console.log('Feedback submitted successfully');
       } else {
         console.error('Failed to submit feedback');
