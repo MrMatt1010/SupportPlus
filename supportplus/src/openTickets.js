@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './openTickets.css';
+import Modal from './modal';
 
 const OpenTickets = () => {
   const [openTickets, setOpenTickets] = useState([]);
@@ -9,6 +10,8 @@ const OpenTickets = () => {
     user: '',
     priority: '',
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [action, setAction] = useState('');
 
   useEffect(() => {
     // Fetch open tickets data from the backend with applied filters
@@ -30,20 +33,13 @@ const OpenTickets = () => {
     setFilter({ ...filter, [name]: value });
   };
 
-  const handleCloseTicket = () => {
-    // Handle close ticket action
+  const handleAction = (actionType) => {
+    setAction(actionType);
+    setIsModalOpen(true);
   };
 
-  const handleEscalate = () => {
-    // Handle escalate action
-  };
-
-  const handleUpdate = () => {
-    // Handle update action
-  };
-
-  const handleCancel = () => {
-    // Handle cancel action
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -51,7 +47,7 @@ const OpenTickets = () => {
         <div className="nav-menu">
         <ul>
           <li><a href="./dashboard">Dashboard</a></li>
-          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="./feedback">Feedback</a></li>
           <li><a href="./closedTickets">Closed</a></li>
           <li><a href="./admin">Admin</a></li>
         </ul>
@@ -90,11 +86,12 @@ const OpenTickets = () => {
           ))}
         </div>
         <div className="action-buttons">
-          <button onClick={handleCloseTicket}>Close Ticket</button>
-          <button onClick={handleEscalate}>Escalate</button>
-          <button onClick={handleUpdate}>Update</button>
-          <button onClick={handleCancel}>Cancel</button>
+          <button onClick={() => handleAction('Close Ticket')}>Close Ticket</button>
+          <button onClick={() => handleAction('Escalate')}>Escalate</button>
+          <button onClick={() => handleAction('Update')}>Update</button>
+          <button onClick={() => handleAction('Cancel')}>Cancel</button>
         </div>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal} action={action} />
       </div>
     </div>
   );
