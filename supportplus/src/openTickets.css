@@ -1,85 +1,58 @@
 /* openTickets.css */
-
-.open-tickets-container-container {
+.open-tickets-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-    color: white;
+    flex-direction: row;
   }
   
   .nav-menu {
-    width: 200px;
+    flex: 1;
     padding: 20px;
+    color: orange; 
   }
-  
-  .nav-menu ul {
-    list-style-type: none;
-    padding: 0;
+  .new-ticket-button {
+    font-size: 14px; 
+    padding: 8px 12px; 
   }
-  
-  .nav-menu ul li {
-    margin-bottom: 10px;
+  .main-content {
+    flex: 2;
+    padding: 20px;
   }
   
   .nav-menu ul li a {
-    color: #F58A07;
-    text-decoration: none;
-  }
-  
-  .nav-menu button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: orange;
-    color: black;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .section {
-    margin-top: 20px;
-    padding: 20px;
-    border: 2px solid orange;
-    border-radius: 10px;
-  }
-  
-  .section h2 {
     color: orange;
   }
   
-  .filter-options {
-    display: flex;
-    align-items: center;
+
+  .open-tickets-content {
     margin-bottom: 20px;
   }
   
-  .filter-options input,
-  .filter-options select {
-    padding: 10px;
-    margin-right: 10px;
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   
-  .filter-options input[type="text"] {
-    width: 200px;
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
   }
   
-  .ticket-list {
-    display: grid;
-    grid-gap: 20px;
-  }
-  
-  .ticket {
-    background-color: lightblue;
-    padding: 10px;
+  .modal-content {
+    background-color: white;
+    padding: 20px;
     border-radius: 5px;
+    position: relative;
   }
   
-  .ticket p {
-    margin: 5px 0;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
   }
   
- 

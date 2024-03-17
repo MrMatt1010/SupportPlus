@@ -85,12 +85,12 @@ const OpenTickets = () => {
             </div>
           ))}
         </div>
-        <div className="action-buttons">
+        {/* <div className="action-buttons">
           <button onClick={() => handleAction('Close Ticket')}>Close Ticket</button>
           <button onClick={() => handleAction('Escalate')}>Escalate</button>
           <button onClick={() => handleAction('Update')}>Update</button>
           <button onClick={() => handleAction('Cancel')}>Cancel</button>
-        </div>
+        </div> */}
         <Modal isOpen={isModalOpen} onClose={handleCloseModal} action={action} />
       </div>
     </div>

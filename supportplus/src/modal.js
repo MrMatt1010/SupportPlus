@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import './OpenTickets.css';
+import './openTickets.css';
 
 const OpenTickets = () => {
+  const [supportAgent, setSupportAgent] = useState('');
+  const [supportAgents, setSupportAgents] = useState([]); // Assuming this stores a list of support agents
+  const [resolution, setResolution] = useState(''); // Assuming this stores the resolution status
+  const [internalNotes, setInternalNotes] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
@@ -12,6 +16,21 @@ const OpenTickets = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleCloseTicket = () => {
+    // Handle close ticket action
+    handleCloseModal();
+  };
+
+  const handleEscalateTicket = () => {
+    // Handle escalate ticket action
+    handleCloseModal();
+  };
+
+  const handleUpdateTicket = () => {
+    // Handle update ticket action
+    handleCloseModal();
   };
 
   return (
@@ -82,7 +101,7 @@ const OpenTickets = () => {
             {modalContent === 'cancel' && (
               <div>
                 
-                <h2>Cancel Modal</h2>
+                <h2>Cancel</h2>
               </div>
             )}
           </div>
