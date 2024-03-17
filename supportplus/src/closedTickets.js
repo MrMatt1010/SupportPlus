@@ -34,9 +34,9 @@ const ClosedTickets = () => {
       <div className="nav-menu">
         <ul>
           <li><a href="./openTickets">Tickets</a></li>
-          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="./feedBack">Feedback</a></li>
           <li><a href="./dashboard">Dashboard</a></li>
-          <li><a href="#admin">Admin</a></li>
+          <li><a href="./Admin">Admin</a></li>
         </ul>
         <button>New Ticket</button>
       </div>
