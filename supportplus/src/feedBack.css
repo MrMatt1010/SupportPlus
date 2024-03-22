@@ -1,8 +1,8 @@
 /* Feedback.css */
 
 .feedback-page {
-    background-color: #000; /* Black background */
-    color: orange; /* White text */
+    background-color: #000; 
+    color: orange; 
     padding: 20px;
   }
   
@@ -10,7 +10,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #000; /* Black background */
+    background-color: #000; 
     border-radius: 8px;
   }
   
@@ -37,7 +37,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff; 
   }
   
   button[type="submit"] {

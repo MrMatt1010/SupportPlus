@@ -1,5 +1,3 @@
-/*login.js */
-
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './login.css'; 
@@ -15,7 +13,9 @@ const Login = () => {
 
   return (
     <div className="login-container">  
-    <h2 style={{ color: 'orange' }}>SupportPlus</h2>
+      <div className="support-plus-heading">
+        <h2 style={{ color: 'orange' }}>SupportPlus</h2>
+      </div>
       <div className="login-form">
         <h2 style={{ color: 'orange' }}>Login</h2>
         <div className="input-group">
@@ -43,3 +43,5 @@ const Login = () => {
 };
 
 export default Login;
+
+

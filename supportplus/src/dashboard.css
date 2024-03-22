@@ -1,60 +1,96 @@
-/* Dashboard.css */
+/* dashboard.css */
+body {
+  background-color: black;
+}
 
-.dashboard-container {
-    background-color: black;
-    color: white;
-    padding: 20px;
-  }
-  
-  .nav-menu {
-   /* border-right: 2px solid lightblue; */
-    padding-right: 20px;
-    margin-right: 20px;
-    float: left;
-  }
-  
-  .nav-menu ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .nav-menu ul li {
-    margin-bottom: 10px;
-  }
-  
-  .nav-menu ul li a {
-    color: lightblue;
-    text-decoration: none;
-  }
-  
-  .nav-menu button {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin-top: 20px;
-  }
-  
-  .section {
-    margin-bottom: 30px;
-  }
-  
-  .section h2 {
-    color: lightblue;
-  }
-  
-  .ticket-list,
-  .feedback-list {
-    border: 2px solid lightblue;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .ticket,
-  .feedback {
-    margin-bottom: 10px;
-  }
-  
+
+.feedback-container {
+  margin-top: 20px; /* Add margin between sections */
+  border: 2px solid orange;
+}
+
+.open-tickets-container{
+  margin-bottom: 20px;
+  margin-left: 150px;
+  color: orange;
+  border:2px solid orange;
+  width: 80%;
+  text-align: center;
+}
+.nav-menu {
+  flex: 0 0 200px; /* Adjust width of nav menu as needed */
+  background-color: black; /* Set background color of nav menu */
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin-bottom: 10px;
+}
+
+.nav-menu ul li a {
+  display: block;
+  color: white; /* Set text color to white */
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-menu ul li a.active {
+  background-color: #555;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  color: white; /* Set text color to white */
+}
+
+
+.nav-menu {
+  flex: 0 0 200px; /* Adjust width of nav menu as needed */
+  background-color: #333; /* Set background color of nav menu */
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin-bottom: 10px;
+}
+
+.nav-menu ul li a {
+  display: block;
+  color: white; /* Set text color to white */
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-menu ul li a.active {
+  background-color: #555;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  color: white; /* Set text color to white */
+}
+
+.new-ticket-button {
+  width: 150px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  font-size: 14px; /* Adjust font size as needed */
+  background-color: orange; /* Set background color to orange */
+  color: black; /* Set text color to black */
+  text-decoration: none; /* Remove default underline */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -47,9 +47,9 @@ const Dashboard = () => {
           <li><a href="./closedTickets">Closed</a></li>
           <li><a href="./admin">Admin</a></li>
         </ul>
-        <Link to="./createNewTicket"><button>New Ticket</button></Link>
+        <Link to="/createNewTicket" className="new-ticket-button">New Ticket</Link>
       </div>
-      <div className="section">
+      <div className="open-tickets-container">
         <h2>Open Tickets</h2>
         <div className="ticket-list">
           {/* Display ticket data */}
@@ -66,7 +66,7 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-      <div className="section">
+      <div className="feedback-container">
         <h2>Recent Feedback</h2>
         <div className="feedback-list">
           {/* Display feedback data */}
